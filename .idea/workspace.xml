@@ -4,8 +4,6 @@
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tf2.0-exercise.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tf2.0-exercise.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tutorial_minst_fnn-numpy-exercise.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tutorial_minst_fnn-numpy-exercise.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tutorial_minst_fnn-tf2.0-exercise.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tutorial_minst_fnn-tf2.0-exercise.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +145,8 @@
       <workItem from="1547191648550" duration="1120000" />
       <workItem from="1547193278772" duration="24395000" />
       <workItem from="1578537568959" duration="28952000" />
-      <workItem from="1578808181782" duration="15279000" />
+      <workItem from="1578808181782" duration="15358000" />
+      <workItem from="1578883595113" duration="7495000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578663836671</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test">
+      <created>1578841224242</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578841224243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
