@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题/2.3 线性模型实战.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tf2.0-exercise.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/神经网络与深度学习-邱_Exer/chap4_ simple neural network/tf2.0-exercise.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +18,20 @@
     <SUITE FILE_PATH="coverage/ML$indexing.coverage" NAME="indexing Coverage Results" MODIFIED="1547199030902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/pandas/core" />
     <SUITE FILE_PATH="coverage/ML$Day2_Simple_Linear_Regression.coverage" NAME="Day2_Simple_Linear_Regression Coverage Results" MODIFIED="1547272741234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/src" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -27,13 +43,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="042709fc-895f-47e5-af7c-bf2d2e5d7167" />
-  </component>
   <component name="ProjectId" id="1W8iLct4c38njcC1VnXLHDgI8t5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -55,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Day2_Simple_Linear_Regression">
+  <component name="RunManager" selected="Python.linear_regression">
     <configuration name="Day1_Data_Preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,8 +139,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题/linear_regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.linear_regression" />
         <item itemvalue="Python.Day2_Simple_Linear_Regression" />
         <item itemvalue="Python.Day1_Data_Preprocessing" />
         <item itemvalue="Python.indexing" />
@@ -147,6 +187,10 @@
       <workItem from="1578537568959" duration="28952000" />
       <workItem from="1578808181782" duration="15358000" />
       <workItem from="1578883595113" duration="7495000" />
+      <workItem from="1587395182537" duration="22000" />
+      <workItem from="1587444578195" duration="6000" />
+      <workItem from="1587455885973" duration="5009000" />
+      <workItem from="1587470316232" duration="3869000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
@@ -219,5 +263,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ML_Notes$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1587458173310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题" />
   </component>
 </project>
