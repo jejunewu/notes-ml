@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/TF2 MNIST.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/TF2 MNIST.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/TF2 MNIST.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,29 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linear_regression">
-    <configuration name="Day1_Data_Preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/src/Day1_Data_Preprocessing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.forward_tensor">
     <configuration name="Day2_Simple_Linear_Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="indexing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="forward_layer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,12 +101,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Lib/site-packages/pandas/core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/forward_layer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forward_tensor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/forward_tensor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,12 +159,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.forward_tensor" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.forward_layer" />
         <item itemvalue="Python.linear_regression" />
         <item itemvalue="Python.Day2_Simple_Linear_Regression" />
-        <item itemvalue="Python.Day1_Data_Preprocessing" />
-        <item itemvalue="Python.indexing" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +213,9 @@
       <workItem from="1587455885973" duration="5009000" />
       <workItem from="1587470316232" duration="3926000" />
       <workItem from="1587477649442" duration="183000" />
-      <workItem from="1587477847366" duration="2596000" />
+      <workItem from="1587477847366" duration="2818000" />
+      <workItem from="1587534186677" duration="65000" />
+      <workItem from="1587541608831" duration="6317000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
@@ -248,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587477595717</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mnist">
+      <created>1587480904528</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587480904528</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,9 +302,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Linear regression" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linear regression" />
+    <MESSAGE value="mnist" />
+    <option name="LAST_COMMIT_MESSAGE" value="mnist" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ML_Notes$forward_tensor.coverage" NAME="forward_tensor Coverage Results" MODIFIED="1587547322701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+    <SUITE FILE_PATH="coverage/ML_Notes$main.coverage" NAME="main Coverage Results" MODIFIED="1587545699901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+    <SUITE FILE_PATH="coverage/ML_Notes$forward_layer.coverage" NAME="forward_layer Coverage Results" MODIFIED="1587545673010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
     <SUITE FILE_PATH="coverage/ML_Notes$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1587478483762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题" />
   </component>
 </project>
