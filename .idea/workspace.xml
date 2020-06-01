@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel/EvaluationModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/LinearRegression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/RandomForest/RF_Demo.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/RandomForest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/SVM/SVM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/SVM/SVM_Demo.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/XGBoost/XGBDemo.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/GaussianProces.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/GaussianProces.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/SVM/svm.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +63,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Github_Repo\jejune5\ML-Notes\ML_Algorithm_test\GaussianProcess" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Github_Repo\jejune5\ML-Notes\ML_Algorithm_test" />
+      <recent name="F:\Github_Repo\jejune5\ML-Notes\ML_Algorithm_test\SVM" />
       <recent name="I:\Python\ML\venv" />
     </key>
   </component>
@@ -72,8 +84,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.forward_tensor">
-    <configuration name="Day2_Simple_Linear_Regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.LinearRegression">
+    <configuration name="EvaluationModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,12 +93,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/src/Day2_Simple_Linear_Regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel/EvaluationModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LinearRegression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/LinearRegression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,28 +173,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="linear_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ML" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题/linear_regression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LinearRegression" />
+        <item itemvalue="Python.EvaluationModel" />
         <item itemvalue="Python.forward_tensor" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.forward_layer" />
-        <item itemvalue="Python.linear_regression" />
-        <item itemvalue="Python.Day2_Simple_Linear_Regression" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +237,18 @@
       <workItem from="1587737316813" duration="1694000" />
       <workItem from="1587782368413" duration="469000" />
       <workItem from="1587784283551" duration="621000" />
-      <workItem from="1590973642425" duration="3008000" />
+      <workItem from="1590973642425" duration="3092000" />
+      <workItem from="1590977266339" duration="19000" />
+      <workItem from="1590977302594" duration="326000" />
+      <workItem from="1590977631397" duration="11147000" />
+      <workItem from="1590990576500" duration="123000" />
+      <workItem from="1590990703776" duration="411000" />
+      <workItem from="1590991118774" duration="550000" />
+      <workItem from="1590991673432" duration="85000" />
+      <workItem from="1590991762050" duration="32000" />
+      <workItem from="1590991802106" duration="253000" />
+      <workItem from="1590992059531" duration="741000" />
+      <workItem from="1590992845286" duration="6400000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
@@ -304,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587743251975</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="GP">
+      <created>1590977215875</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590977215875</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,12 +358,15 @@
     <MESSAGE value="Linear regression" />
     <MESSAGE value="mnist" />
     <MESSAGE value="4.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.5" />
+    <MESSAGE value="GP" />
+    <option name="LAST_COMMIT_MESSAGE" value="GP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ML_Notes$forward_layer.coverage" NAME="forward_layer Coverage Results" MODIFIED="1587545673010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+    <SUITE FILE_PATH="coverage/ML_Notes$EvaluationModel.coverage" NAME="EvaluationModel Coverage Results" MODIFIED="1590992868464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel" />
     <SUITE FILE_PATH="coverage/ML_Notes$forward_tensor.coverage" NAME="forward_tensor Coverage Results" MODIFIED="1587547322701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
     <SUITE FILE_PATH="coverage/ML_Notes$main.coverage" NAME="main Coverage Results" MODIFIED="1587545699901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
+    <SUITE FILE_PATH="coverage/ML_Notes$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1590998948888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess" />
     <SUITE FILE_PATH="coverage/ML_Notes$linear_regression.coverage" NAME="linear_regression Coverage Results" MODIFIED="1587478483762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch02-回归问题" />
   </component>
 </project>
