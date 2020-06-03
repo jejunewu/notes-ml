@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel/EvaluationModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ML_Algorithm_test/EvaluationModel/EvaluationModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/GaussianProces.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ML_Algorithm_test/GaussianProcess/GaussianProces.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,6 +239,11 @@
       <workItem from="1590991802106" duration="253000" />
       <workItem from="1590992059531" duration="741000" />
       <workItem from="1590992845286" duration="7169000" />
+      <workItem from="1591001775984" duration="1418000" />
+      <workItem from="1591103111347" duration="3000" />
+      <workItem from="1591151539924" duration="448000" />
+      <workItem from="1591161330401" duration="433000" />
+      <workItem from="1591161777675" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
@@ -333,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591000978534</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="GP">
+      <created>1591001908694</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1591001908694</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,9 +367,9 @@
     <MESSAGE value="Linear regression" />
     <MESSAGE value="mnist" />
     <MESSAGE value="4.5" />
-    <MESSAGE value="GP" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="GP" />
+    <option name="LAST_COMMIT_MESSAGE" value="GP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ML_Notes$forward_layer.coverage" NAME="forward_layer Coverage Results" MODIFIED="1587545673010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/龙龙_Deep-Learning-with-TensorFlow-book/ch03-分类问题" />
