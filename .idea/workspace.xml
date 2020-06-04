@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/KNN/knn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ML_Algorithm_test/KNN/knn.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ML_Algorithm_test/SVM/SVM_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ML_Algorithm_test/SVM/SVM_Demo.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
