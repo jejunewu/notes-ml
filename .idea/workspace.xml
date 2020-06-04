@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10468b11-9075-4d81-8560-292890322342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/KNN/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ML_Algorithm_test/KNN/knn.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,6 +245,7 @@
       <workItem from="1591151539924" duration="448000" />
       <workItem from="1591161330401" duration="433000" />
       <workItem from="1591161777675" duration="22000" />
+      <workItem from="1591236579080" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1578537611408</created>
