@@ -1,5 +1,6 @@
 from sklearn.metrics import r2_score as r2, mean_squared_error as MSE, mean_absolute_error as MAE
 from sklearn.preprocessing import StandardScaler
+import numpy as np
 
 def modelEvaluate(model, x_test,  y_test, ):
 
@@ -11,6 +12,9 @@ def modelEvaluate(model, x_test,  y_test, ):
         if str(model)[i] == '(':
             modelName = str(model)[:i]
             break
+
+    def MAPE(y_true, y_pred):
+        return np.mean(np.abs((y_pred - y_true) / y_true)) * 100
 
     print('===============', modelName ,'===============')
 
@@ -24,6 +28,8 @@ def modelEvaluate(model, x_test,  y_test, ):
 
     # print("平均绝对误差(MAE)为:", MAE(ss_y.inverse_transform(y_test),ss_y.inverse_transform(y_predict)))
     print("平均绝对误差(MAE)为:", MAE(y_test, y_predict))
+
+    print("平均绝对百分比误差(MAPE)为:", MAPE(y_test, y_predict))
 
     print('='*(len(modelName)+32))
 
