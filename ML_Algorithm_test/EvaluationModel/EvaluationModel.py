@@ -1,6 +1,7 @@
-from sklearn.metrics import r2_score as r2, mean_squared_error as MSE, mean_absolute_error as MAE
+from sklearn.metrics import r2_score as r2, mean_squared_error as MSE, mean_absolute_error as MAE, SCORERS
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+print(sorted(SCORERS.keys()))
 
 def modelEvaluate(model, x_test,  y_test, ):
 
