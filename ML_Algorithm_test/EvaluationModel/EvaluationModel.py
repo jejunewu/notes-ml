@@ -30,7 +30,7 @@ def modelEvaluate(model, x_test,  y_test, ):
     # print("平均绝对误差(MAE)为:", MAE(ss_y.inverse_transform(y_test),ss_y.inverse_transform(y_predict)))
     print("平均绝对误差(MAE)为:", MAE(y_test, y_predict))
 
-    print("平均绝对百分比误差(MAPE)为:", MAPE(y_test, y_predict))
+    #print("平均绝对百分比误差(MAPE)为:", MAPE(y_test, y_predict))
 
     print('='*(len(modelName)+32))
 
