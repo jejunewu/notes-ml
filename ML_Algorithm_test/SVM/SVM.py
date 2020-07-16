@@ -52,7 +52,7 @@ linear_svr.fit(x_train, y_train)
 linear_svr_y_predict = linear_svr.predict(x_test)
 
 # 多项式核函数配置支持向量机
-poly_svr = SVR(kernel="poly")
+poly_svr = SVR(kernel="poly",verbose=True)
 # 训练
 poly_svr.fit(x_train, y_train)
 # 预测 保存预测结果
