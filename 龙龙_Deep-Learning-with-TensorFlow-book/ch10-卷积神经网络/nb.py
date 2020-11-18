@@ -100,7 +100,7 @@ criteon = losses.CategoricalCrossentropy(from_logits=True)
     # 自动计算梯度
     grads = tape.gradient(loss, network.trainable_variables)
     # 自动更新参数
-    optimizer.apply_gradients(zip(grads, network.trainable_variables))
+    optimizers.apply_gradients(zip(grads, network.trainable_variables))
 
 
 # %%
@@ -257,7 +257,7 @@ variables = conv_net.trainable_variables + fc_net.trainable_variables
 # 对所有参数求梯度
 grads = tape.gradient(loss, variables)
 # 自动更新
-optimizer.apply_gradients(zip(grads, variables))
+optimizers.apply_gradients(zip(grads, variables))
 
 
 # %%
@@ -288,7 +288,7 @@ xx = tf.nn.conv2d_transpose(out, w, strides=2,
     padding='VALID',
     output_shape=[1,5,5,1])
 
-
+'''
 <tf.Tensor: id=117, shape=(5, 5), dtype=float32, numpy=
 array([[   67.,  -134.,   278.,  -154.,   231.],
        [ -268.,   335.,  -710.,   385.,  -462.],
@@ -296,11 +296,12 @@ array([[   67.,  -134.,   278.,  -154.,   231.],
        [ -468.,   585., -1210.,   635.,  -762.],
        [  819.,  -936.,  1942., -1016.,  1143.]], dtype=float32)>
 
-
+'''
 # %%
 x = tf.random.normal([1,6,6,1])
 # 6x6的输入经过普通卷积
 out = tf.nn.conv2d(x,w,strides=2,padding='VALID')
+'''
 out
 <tf.Tensor: id=21, shape=(1, 2, 2, 1), dtype=float32, numpy=
 array([[[[ 20.438847 ],
@@ -308,6 +309,7 @@ array([[[[ 20.438847 ],
 
         [[  0.8098897],
          [-28.30303  ]]]], dtype=float32)>
+'''
 # %%
 # 恢复出6x6大小
 xx = tf.nn.conv2d_transpose(out, w, strides=2, 
