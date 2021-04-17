@@ -9,3 +9,9 @@
 ## PART 2 [龙龙TensorFlow深度学习](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book)
 
 此部分内容侧重于 Tensorflow2 算法的实现。
+
+------
+
+## PART 3 [李航-统计学习方法II](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book)
+
+此部分内容为书中案例代码的实现。
