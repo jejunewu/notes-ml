@@ -3,7 +3,7 @@ import  tensorflow as tf
 import  numpy as np
 from    tensorflow import keras
 from    tensorflow.keras import layers, losses, optimizers, Sequential
-
+import datetime
 
 tf.random.set_seed(22)
 np.random.seed(22)
@@ -44,8 +44,11 @@ class MyRNN(keras.Model):
         self.embedding = layers.Embedding(total_words, embedding_len,
                                           input_length=max_review_len)
         # 构建2个Cell
-        self.rnn_cell0 = layers.SimpleRNNCell(units, dropout=0.5)
-        self.rnn_cell1 = layers.SimpleRNNCell(units, dropout=0.5)
+        # self.rnn_cell0 = layers.SimpleRNNCell(units, dropout=0.5)
+        # self.rnn_cell1 = layers.SimpleRNNCell(units, dropout=0.5)
+        self.rnn_cell0 = layers.GRUCell(units, dropout=0.5)
+        self.rnn_cell1 = layers.GRUCell(units, dropout=0.5)
+
         # 构建分类网络，用于将CELL的输出特征进行分类，2分类
         # [b, 80, 100] => [b, 64] => [b, 1]
         self.outlayer = Sequential([
@@ -73,7 +76,8 @@ class MyRNN(keras.Model):
 
 def main():
     units = 64 # RNN状态向量长度f
-    epochs = 4 # 训练epochs
+    epochs = 10 # 训练epochs
+    startTime = datetime.datetime.now()
 
     model = MyRNN(units)
     # 装配
@@ -83,7 +87,12 @@ def main():
     # 训练和验证
     model.fit(db_train, epochs=epochs, validation_data=db_test)
     # 测试
-    model.evaluate(db_test)
+    score = model.evaluate(db_test)
+
+    endTime = datetime.datetime.now()
+
+    print('Total time :', endTime-startTime)
+    print('Final score:', score)
 
 
 if __name__ == '__main__':
