@@ -1,5 +1,6 @@
 import numpy as np
 import tensorflow as tf
+from tensorflow import keras
 from tensorflow.keras import layers,datasets, optimizers, metrics, Sequential
 
 ### 导入数据
@@ -11,16 +12,33 @@ print(x_test.shape, '===>', y_test.shape)
 x_train = tf.convert_to_tensor(x_train, dtype=tf.float32) / 255
 x_test =  tf.convert_to_tensor(x_test, dtype=tf.float32) / 255
 
-db_train = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(32).batch(100)
-db_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(32).batch(100)
+db_train = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(32).batch(50)
+db_test = tf.data.Dataset.from_tensor_slices((x_test, y_test)).shuffle(32).batch(50)
 
-network = Sequential([
-    layers.Flatten(input_shape=(28,28)),
-    layers.Dense(256, activation='relu'),
-    layers.Dense(256, activation='relu'),
-    layers.Dense(10, activation='softmax')
-])
+
+class MyModel(keras.Model):
+
+    def __init__(self):
+        super(MyModel, self).__init__()
+
+        self.model = keras.Sequential([
+            layers.Dense(100, activation='relu'),
+            layers.Dense(100, activation='relu'),
+            layers.Dense(10, activation='softmax')])
+
+    def call(self, x, training=None):
+        x = tf.reshape(x, [-1, 28*28])
+
+        x = self.model(x, training)
+
+        return x
+
+#from Example.MNIST.network import MyModel
+network = MyModel()
+network.build(input_shape=(28, 28))
 network.summary()
+
+
 
 ### 搭建网络 - keras版
 network.compile(optimizer='SGD', loss=tf.losses.sparse_categorical_crossentropy, metrics=['accuracy'])
