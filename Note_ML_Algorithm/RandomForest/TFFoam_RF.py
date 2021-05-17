@@ -1,5 +1,5 @@
 import numpy as np
-from ML_Algorithm_test.RandomForest.randomforest import model_RandomForest as RF
+from Note_ML_Algorithm.RandomForest.randomforest import model_RandomForest as RF
 
 training_inputs = np.load('training_inputs.npy')
 print(training_inputs.shape)

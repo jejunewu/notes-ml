@@ -6,7 +6,7 @@ from sklearn.gaussian_process.kernels import ConstantKernel as C, RBF
 from sklearn.datasets import load_boston
 
 from sklearn.model_selection import KFold, cross_val_score as CVS , train_test_split as TTS
-from ML_Algorithm_test.EvaluationModel import EvaluationModel as EM
+from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 
 import matplotlib.pyplot as plt
 import numpy as np

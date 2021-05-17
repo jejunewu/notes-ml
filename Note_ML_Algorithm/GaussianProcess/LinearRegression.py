@@ -14,7 +14,7 @@ from sklearn.linear_model import Ridge
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF, ConstantKernel as C
 from sklearn.model_selection import GridSearchCV
-from ML_Algorithm_test.EvaluationModel import EvaluationModel as EM
+from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 
 if __name__ == "__main__":
     

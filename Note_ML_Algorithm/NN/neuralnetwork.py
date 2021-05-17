@@ -11,7 +11,7 @@ from tensorflow.keras.models import Sequential
 from sklearn.model_selection import train_test_split as TTS, cross_val_score as CVS, StratifiedKFold as SKF, KFold
 from sklearn.metrics import r2_score
 
-from ML_Algorithm_test.EvaluationModel import EvaluationModel as EM
+from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 import datetime
 import numpy as np
 import os
