@@ -1,7 +1,7 @@
 # Notes of ML
 ---
 
-
+3.12 15:36
 
 
 
@@ -26,6 +26,4 @@
 [李航-统计学习方法II](https://github.com/fengdu78/lihang-code)
 
 此部分内容为书中案例代码的实现。
-
-
 
