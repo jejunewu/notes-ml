@@ -36,9 +36,9 @@ class Net(nn.Module):
         return y
 
 if __name__ == '__main__':
-    DATA_HOME = r'D:\jejune\Datasets'
-    train_datasets = CIFAR10(DATA_HOME, train=True, download=False)
-    test_datasets = CIFAR10(DATA_HOME, train=False, download=False)
+    DATA_HOME = r'..//..//..//Datasets//CIFAR10//'
+    train_datasets = CIFAR10(DATA_HOME, train=True, download=True)
+    test_datasets = CIFAR10(DATA_HOME, train=False, download=True)
 
     X = torch.tensor(train_datasets.data).float()
     Y = torch.tensor(train_datasets.targets)

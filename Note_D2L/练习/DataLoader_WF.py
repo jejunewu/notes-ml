@@ -2,7 +2,7 @@ import collections
 
 
 def read_WangFen():
-    with open('../../data/汪峰.txt','r',encoding='utf-8') as f:
+    with open('../../Datasets/汪峰.txt', 'r', encoding='utf-8') as f:
         lines = f.readlines()
         lines = [line.strip() for line in lines]
         return lines
@@ -75,3 +75,9 @@ def load_corpus(max_tokens=-1):
     if max_tokens > 0:
         corpus = corpus[:max_tokens]
     return corpus, vocab
+
+if __name__ == '__main__':
+    tmp = read_WangFen()
+    # corpus, vocab = load_corpus()
+    # tmp = vocab.token_freqs[:10]
+    print(tmp)
