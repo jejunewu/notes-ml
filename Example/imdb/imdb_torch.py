@@ -4,12 +4,14 @@ from torch.nn import functional as F
 import torchkeras
 import string, re
 import torchtext
+from NNUtils import torchwu
 
 MAX_WORDS = 10000  # 仅考虑最高频的10000个词
 MAX_LEN = 200  # 每个样本保留200个词的长度
 BATCH_SIZE = 20
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-DEVICE = torch.device("cpu")
+# DEVICE = torch.device("cpu")
+print('DEVICE: ', DEVICE)
 
 # 分词方法
 tokenizer = lambda x: re.sub('[%s]' % string.punctuation, "", x).split(" ")
@@ -30,7 +32,7 @@ LABEL = torchtext.legacy.data.Field(sequential=False, use_vocab=False)
 # 2,构建表格型dataset
 # torchtext.data.TabularDataset可读取csv,tsv,json等格式
 ds_train, ds_test = torchtext.legacy.data.TabularDataset.splits(
-    path='../../Datasets/imdb', train='train.csv', test='test.csv', format='csv',
+    path='D://REPO//Datasets//imdb', train='train.csv', test='test.csv', format='csv',
     fields=[('label', LABEL), ('text', TEXT)], skip_header=True)
 
 # 3,构建词典
@@ -109,7 +111,8 @@ def accuracy(y_pred, y_true):
 train_mode = 0
 
 if train_mode == 0:
-    model = torchkeras.Model(net)
+
+    model = torchwu.Model(net)
     model.summary(input_shape=(200,), input_dtype=torch.LongTensor)
     model.compile(
         loss_func=nn.BCELoss(),
