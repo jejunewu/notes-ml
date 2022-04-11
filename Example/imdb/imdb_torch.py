@@ -10,7 +10,7 @@ MAX_WORDS = 10000  # 仅考虑最高频的10000个词
 MAX_LEN = 200  # 每个样本保留200个词的长度
 BATCH_SIZE = 20
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-# DEVICE = torch.device("cpu")
+DEVICE = torch.device("cpu")
 print('DEVICE: ', DEVICE)
 
 # 分词方法
