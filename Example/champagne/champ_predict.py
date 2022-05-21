@@ -14,7 +14,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 # 导入数据
 # 数据下载：https://www.kaggle.com/kankanashukla/champagne-data
-df = pd.read_csv('champagne.csv', index_col=0)
+df = pd.read_csv('covid.csv', index_col=0)
 df.head()
 
 # %%

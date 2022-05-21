@@ -7,6 +7,7 @@ print(t)
 
 v = np.linspace(0,1,100)
 
+#%%
 print(v)
 
 print("123")

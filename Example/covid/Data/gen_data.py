@@ -1,8 +1,8 @@
-from Data import CovidData
+import CovidData
 import pandas as pd
 import time
 
-list_date = pd.date_range(start='2021-01-01', end='2022-03-24', freq='1D')
+list_date = pd.date_range(start='2022-01-01', end='2022-03-24', freq='1D')
 
 # df = pd.DataFrame(columns=['currentConfirmedCount', 'curedCount', 'deadCount'])
 # for date in list_date:
@@ -25,12 +25,12 @@ list_date = pd.date_range(start='2021-01-01', end='2022-03-24', freq='1D')
 # df.to_csv('covid.csv')
 
 
-df_msg = pd.DataFrame(columns=['msg'])
-for date in list_date:
-    date_str = date.strftime('%Y-%m-%d')
-    data = CovidData.get_covid_data(date=date_str)
-    df_msg.loc[date_str] = {'msg': data}
-    print(date_str, data)
-    time.sleep(0.5)
-
-df_msg.to_csv('msg.csv')
+# df_msg = pd.DataFrame(columns=['msg'])
+# for date in list_date:
+#     date_str = date.strftime('%Y-%m-%d')
+#     data = CovidData.get_covid_data(date=date_str)
+#     df_msg.loc[date_str] = {'msg': data}
+#     print(date_str, data)
+#     time.sleep(0.5)
+#
+# df_msg.to_csv('msg.csv')
