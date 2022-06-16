@@ -6,28 +6,51 @@ from torch.nn import functional as F
 class Seq2SeqEncoder(nn.Module):
     """
     用于序列到序列学习的循环神经网络编码器
-    Inputs: X:(batch_size, seq_len)
+
+    Args:
+        vocab_size (int): vocab大小。
+        embed_size (int): embedding_dim。
+        hidden_size (int): RNN输出维度。
+        num_layers (int): RNN层数。
+        dropout (float): dropout。
+
+    Inputs:
+        x: (batch_size, seq_len)
+
     Outputs:
-        Y: (batch_size, seq_len, num_hiddens)
-        state: (num_layers, batch_size, num_hiddens)
+        output: (batch_size, seq_len, hidden_size)
+        state: (num_layers, batch_size, hidden_size)
+
     """
 
-    def __init__(self, vocab_size, embed_size, num_hiddens, num_layers, dropout=0, **kwargs):
-        super(Seq2SeqEncoder, self).__init__(**kwargs)
-        # 嵌入层
-        self.embedding = nn.Embedding(vocab_size, embed_size)
-        self.rnn = nn.GRU(embed_size, num_hiddens, num_layers, batch_first=True, dropout=dropout)
+    def __init__(self, vocab_size, embed_size, hidden_size, num_layers, dropout=0, **kwargs):
+        """
 
-    def forward(self, X, *args):
-        # X: (batch_size, seq_len)
-        X = self.embedding(X)
-        # X: (batch_size, seq_len, embed_size)
-        # h_0默认为0初始化
-        output, state = self.rnn(X)
-        # output: (batch_size, seq_len, num_hiddens)
-        # state: (num_layers, batch_size, num_hiddens)
+        """
+        super(Seq2SeqEncoder, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, embed_size)
+        self.rnn = nn.GRU(input_size=embed_size, hidden_size=hidden_size, num_layers=num_layers, batch_first=True,
+                          dropout=dropout)
+
+    def forward(self, x, *args):
+        # x->(batch_size, seq_len)
+        x = self.embedding(x)
+        # x->(batch_size, seq_len, embed_size)
+        output, state = self.rnn(x)
+        # output->(batch_size, seq_len, hidden_size)
+        # state->(num_layers, batch_size, hidden_size)
         return output, state
 
+
+print('#' + '-' * 8 + '#')
+batch = 32
+seq_len = 15
+x = torch.randn([batch, seq_len])
+vocab_size, embed_size, hidden_size, num_layers = 3000, 100, 8,3
+encoder = Seq2SeqEncoder(vocab_size, embed_size,hidden_size, num_layers)
+output, state = encoder(x)
+print(output.shape)
+print(state.shape)
 
 class Seq2SeqDecoder(nn.Module):
     """
@@ -86,6 +109,7 @@ class EncoderDecoder(nn.Module):
         enc_outputs = self.encoder(enc_X, *args)
         dec_state = self.decoder.init_state(enc_outputs, *args)
         return self.decoder(dec_X, dec_state)
+
 
 """
 
