@@ -15,18 +15,33 @@ class LoadWord2VecEmbedding:
         return self.model
 
     def get_vocab(self) -> dict:
-        return self.model.vocab
+        """
+        Returns:
+            {token_0 : 0, token_1 : 1, ... }
+        """
+        return self.model.key_to_index
 
     def get_vectors(self) -> np.ndarray:
         return self.model.vectors
 
     def idx2word(self, idx=None) -> str or list:
-        if idx:
-            return self.model.index2word[idx]
-        return self.model.index2word
+        if idx is not None:
+            return self.model.index_to_key[idx]
+        return self.model.index_to_key
 
     def word2vec(self, word=None) -> dict:
-        if word and word in self.model.vocab:
-            idx = self.model.vocab[word].index
+        """
+        Returns:
+            {token_0 : vec_0, token_1 : vec_1, ... }
+        """
+        if word and word in self.get_vocab():
+            idx = self.get_vocab()[word]
             return {word: self.get_vectors()[idx]}
         return {word: vec for word, vec in zip(self.idx2word(), self.get_vectors())}
+
+
+class BuildMyW2VFromLargeW2V:
+    def __int__(self, corpus: list, large_embdding_path: str):
+        large_embdding_loader = LoadWord2VecEmbedding(large_embdding_path)
+
+        self.vector_size = large_embdding_loader.vector_size
