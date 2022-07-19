@@ -112,3 +112,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/deployment.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/ML-Notes.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+Competition/天池-NLP-新闻文本分类/data/NLP_data_list_0715.csv
+Competition/天池-NLP-新闻文本分类/data/submit_fasttext.csv
+Competition/天池-NLP-新闻文本分类/data/test_a.csv
+Competition/天池-NLP-新闻文本分类/data/test_a_sample_submit.csv
+Competition/天池-NLP-新闻文本分类/data/train.csv
+Competition/天池-NLP-新闻文本分类/data/train_set.csv
+Competition/天池-NLP-新闻文本分类/data/zip/test_a.csv.zip
+Competition/天池-NLP-新闻文本分类/data/zip/train_set.csv.zip
+Competition/天池-NLP-新闻文本分类/model/fasttext_20220521174653.mdl
+Competition/天池-NLP-新闻文本分类/model/fasttext_20220521182817.mdl
