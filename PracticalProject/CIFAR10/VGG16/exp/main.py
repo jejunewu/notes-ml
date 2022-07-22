@@ -7,8 +7,8 @@ import  numpy as np
 
 
 
-from  Example.CIFAR10.VGG16.exp.network import VGG16
-from  Example.CIFAR10.VGG16.VGG16 import VGG16 as vgg16_v2
+from  PracticalProject.CIFAR10.VGG16.exp.network import VGG16
+from  PracticalProject.CIFAR10.VGG16.VGG16 import VGG16 as vgg16_v2
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # or any {'0', '1', '2'}
 argparser = argparse.ArgumentParser()

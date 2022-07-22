@@ -21,4 +21,4 @@ ML学习资料及笔记
 
 - **NeuralNetwork** :搭好的模型。
 - **Datasets** : 手动放置数据集。
-- **Example** : 典型算法、数据练习。
+- **PracticalProject** : 实战项目、数据练习。

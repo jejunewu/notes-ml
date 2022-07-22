@@ -1,7 +1,7 @@
 import tensorflow as tf
 import os
 from tensorflow.keras import datasets,optimizers,metrics
-from Example.CIFAR10.ResNet import ResNet
+from PracticalProject.CIFAR10.ResNet import ResNet
 
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 tf.random.set_seed(2345)

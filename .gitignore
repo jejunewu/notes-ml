@@ -16,10 +16,10 @@ Competition/天池-NLP-新闻文本分类/data/zip/test_a.csv.zip
 Competition/天池-NLP-新闻文本分类/data/zip/train_set.csv.zip
 Competition/天池-NLP-新闻文本分类/model/fasttext_20220521174653.mdl
 Competition/天池-NLP-新闻文本分类/model/fasttext_20220521182817.mdl
-Example/__pycache__/__init__.cpython-38.pyc
-Example/CMN_ENG/__pycache__/__init__.cpython-38.pyc
-Example/CMN_ENG/__pycache__/config.cpython-38.pyc
-Example/movie_review_cls/__pycache__/config.cpython-38.pyc
+PracticalProject/__pycache__/__init__.cpython-38.pyc
+PracticalProject/CMN_ENG/__pycache__/__init__.cpython-38.pyc
+PracticalProject/CMN_ENG/__pycache__/config.cpython-38.pyc
+PracticalProject/movie_review_cls/__pycache__/config.cpython-38.pyc
 NeuralNetwork/__pycache__/__init__.cpython-38.pyc
 NeuralNetwork/__pycache__/Attention.cpython-38.pyc
 NeuralNetwork/__pycache__/LeNet.cpython-38.pyc
