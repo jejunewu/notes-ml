@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1903693b-a9f7-468b-bfa4-f207dd6f1165" name="Default Changelist" comment="modify README">
+      <change afterPath="$PROJECT_DIR$/Competition/天池-NLP-新闻文本分类/fasttext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Competition/天池-NLP-新闻文本分类/textcnn.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Note_D2L/B14.7 词的相似性和类比任务.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Competition/天池-NLP-新闻文本分类/fasttext.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Competition/天池-NLP-新闻文本分类/fasttext.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26HYMPqsZqP7vf5hUXWxpsbYvSv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/REPO/github/ML-Notes&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\REPO\github\ML-Notes\Example\CMN-ENG" />
+      <recent name="D:\REPO\github\ML-Notes\data" />
+      <recent name="D:\REPO\github\ML-Notes\Example" />
+      <recent name="D:\REPO\github\ML-Notes\Example\covid\Data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\REPO\github\ML-Notes\Example\CMN-ENG\whl" />
+      <recent name="D:\REPO\github\ML-Notes\Example\CMN-ENG\vocab" />
+      <recent name="D:\REPO\github\ML-Notes\Example\WangFeng" />
+      <recent name="D:\REPO\github\ML-Notes\NeuralNetwork" />
+      <recent name="D:\REPO\github\ML-Notes\Example\MNIST\tf2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.3_predict">
+    <configuration name="2_train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example/CMN_ENG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/CMN_ENG/2_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="3_predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example/CMN_ENG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/CMN_ENG/3_predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Loss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeuralNetwork" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuralNetwork/Loss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bbbbplot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example/CMN_ENG" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/CMN_ENG/bbbbplot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="champ_predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML-Notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example/champagne" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/champagne/champ_predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.3_predict" />
+        <item itemvalue="Python.2_train (1)" />
+        <item itemvalue="Python.champ_predict" />
+        <item itemvalue="Python.bbbbplot" />
+        <item itemvalue="Python.Loss" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1903693b-a9f7-468b-bfa4-f207dd6f1165" name="Default Changelist" comment="" />
+      <created>1647081934593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647081934593</updated>
+      <workItem from="1647081937176" duration="5778000" />
+      <workItem from="1647098651846" duration="415000" />
+      <workItem from="1647099078628" duration="181000" />
+      <workItem from="1647618795235" duration="2000" />
+      <workItem from="1647788470952" duration="665000" />
+      <workItem from="1647828716788" duration="28000" />
+      <workItem from="1648308146732" duration="791000" />
+      <workItem from="1648308990828" duration="1196000" />
+      <workItem from="1648310406505" duration="158000" />
+      <workItem from="1648310577254" duration="103000" />
+      <workItem from="1648310697953" duration="425000" />
+      <workItem from="1648311628660" duration="1137000" />
+      <workItem from="1648350879438" duration="6225000" />
+      <workItem from="1648397503984" duration="2872000" />
+      <workItem from="1648400488359" duration="1125000" />
+      <workItem from="1648430559470" duration="8280000" />
+      <workItem from="1648473861237" duration="382000" />
+      <workItem from="1648570371465" duration="729000" />
+      <workItem from="1648603263561" duration="1451000" />
+      <workItem from="1648823488097" duration="679000" />
+      <workItem from="1649142438376" duration="64000" />
+      <workItem from="1649170942340" duration="3205000" />
+      <workItem from="1649255546506" duration="2003000" />
+      <workItem from="1649294449103" duration="23292000" />
+      <workItem from="1649381105683" duration="3131000" />
+      <workItem from="1649392584047" duration="2039000" />
+      <workItem from="1649414969825" duration="2374000" />
+      <workItem from="1649484423121" duration="8511000" />
+      <workItem from="1649507099252" duration="8630000" />
+      <workItem from="1649517566317" duration="4970000" />
+      <workItem from="1649555954676" duration="9716000" />
+      <workItem from="1649572784745" duration="28300000" />
+      <workItem from="1649688127379" duration="2201000" />
+      <workItem from="1649759638172" duration="2946000" />
+      <workItem from="1649812343278" duration="1340000" />
+      <workItem from="1649948191290" duration="1772000" />
+      <workItem from="1650036447032" duration="1458000" />
+      <workItem from="1650037920830" duration="977000" />
+      <workItem from="1650096545390" duration="9060000" />
+      <workItem from="1650120232363" duration="3312000" />
+      <workItem from="1650159199424" duration="13619000" />
+      <workItem from="1650198291406" duration="8059000" />
+      <workItem from="1650372632074" duration="6742000" />
+      <workItem from="1650419592342" duration="9552000" />
+      <workItem from="1650459329839" duration="1888000" />
+      <workItem from="1650808005312" duration="5668000" />
+      <workItem from="1650885804249" duration="10774000" />
+      <workItem from="1650984562870" duration="2683000" />
+      <workItem from="1651068758873" duration="4896000" />
+      <workItem from="1651152911206" duration="5747000" />
+      <workItem from="1651206519117" duration="3333000" />
+      <workItem from="1651325941673" duration="7207000" />
+      <workItem from="1651369771262" duration="23330000" />
+      <workItem from="1651483128394" duration="2778000" />
+      <workItem from="1653130873425" duration="142000" />
+      <workItem from="1653293788292" duration="5070000" />
+      <workItem from="1653466342155" duration="192000" />
+      <workItem from="1653466543473" duration="814000" />
+    </task>
+    <task id="LOCAL-00001" summary="rename repo">
+      <created>1647092269247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647092269247</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modify README">
+      <created>1647092295643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647092295643</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modify README">
+      <created>1647092487587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647092487587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename repo" />
+    <MESSAGE value="modify README" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify README" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://D:/REPO/github/ML-Notes/Example/champagne/champ_predict.ipynb</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://D:/REPO/github/ML-Notes/Example/champagne/champ_predict.ipynb</url>
+          <line>73</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/imdb/imdb_torch.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CIFAR10/lenet_torch.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CIFAR10/lenet_torch.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/imdb/imdb_torch.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/imdb/imdb_torch.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/MNIST/lenet_torch.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq_ref.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq_ref.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq_ref.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq_ref.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/1_data.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/1_data.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/1_data.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/1_data.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NeuralNetwork/Seq2Seq.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/2_train.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/champagne/champ_predict.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/champagne/champ_predict.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Example/CMN_ENG/3_predict.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ML_Notes$2_train__1_.coverage" NAME="2_train (1) Coverage Results" MODIFIED="1651401354341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN_ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$myCNN.coverage" NAME="myCNN Coverage Results" MODIFIED="1649485376065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Note_Torch/Note_example" />
+    <SUITE FILE_PATH="coverage/ML_Notes$Loss.coverage" NAME="Loss Coverage Results" MODIFIED="1651396693308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NeuralNetwork" />
+    <SUITE FILE_PATH="coverage/ML_Notes$wutorchkeras.coverage" NAME="wutorchkeras Coverage Results" MODIFIED="1649508718913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NNUtils/wutorchkeras" />
+    <SUITE FILE_PATH="coverage/ML_Notes$Dataloader.coverage" NAME="Dataloader Coverage Results" MODIFIED="1649581828948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/TimeMachine" />
+    <SUITE FILE_PATH="coverage/ML_Notes$2_train.coverage" NAME="2_train Coverage Results" MODIFIED="1651370401637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$mnist_torch.coverage" NAME="mnist_torch Coverage Results" MODIFIED="1649522215092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/MNIST" />
+    <SUITE FILE_PATH="coverage/ML_Notes$imdb_split.coverage" NAME="imdb_split Coverage Results" MODIFIED="1649321580694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/imdb" />
+    <SUITE FILE_PATH="coverage/ML_Notes$CovidData.coverage" NAME="CovidData Coverage Results" MODIFIED="1651210938237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/covid/Data" />
+    <SUITE FILE_PATH="coverage/ML_Notes$bbbbplot.coverage" NAME="bbbbplot Coverage Results" MODIFIED="1651399313095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN_ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$DataLoader__1_.coverage" NAME="DataLoader (1) Coverage Results" MODIFIED="1649578491606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/WangFeng" />
+    <SUITE FILE_PATH="coverage/ML_Notes$data.coverage" NAME="data Coverage Results" MODIFIED="1650377822856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$1_data__1_.coverage" NAME="1_data (1) Coverage Results" MODIFIED="1651155775954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$imdb_torch.coverage" NAME="imdb_torch Coverage Results" MODIFIED="1649598811704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/imdb" />
+    <SUITE FILE_PATH="coverage/ML_Notes$pre.coverage" NAME="pre Coverage Results" MODIFIED="1648358715773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/covid" />
+    <SUITE FILE_PATH="coverage/ML_Notes$TEST.coverage" NAME="TEST Coverage Results" MODIFIED="1647099167598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Note_D2L" />
+    <SUITE FILE_PATH="coverage/ML_Notes$lenet_torch__1_.coverage" NAME="lenet_torch (1) Coverage Results" MODIFIED="1649572796574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CIFAR10" />
+    <SUITE FILE_PATH="coverage/ML_Notes$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1649584040924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/WangFeng" />
+    <SUITE FILE_PATH="coverage/ML_Notes$imdb_prepare__1_.coverage" NAME="imdb_prepare (1) Coverage Results" MODIFIED="1649322000194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/imdb" />
+    <SUITE FILE_PATH="coverage/ML_Notes$DataLoader_WF__1_.coverage" NAME="DataLoader_WF (1) Coverage Results" MODIFIED="1649575280282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/WangFeng" />
+    <SUITE FILE_PATH="coverage/ML_Notes$re_demo.coverage" NAME="re_demo Coverage Results" MODIFIED="1650101042167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$Seq2Seq.coverage" NAME="Seq2Seq Coverage Results" MODIFIED="1651373677887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NeuralNetwork" />
+    <SUITE FILE_PATH="coverage/ML_Notes$DataLoader_WF.coverage" NAME="DataLoader_WF Coverage Results" MODIFIED="1649574790777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Note_D2L/练习" />
+    <SUITE FILE_PATH="coverage/ML_Notes$covid_predict__1_.coverage" NAME="covid_predict (1) Coverage Results" MODIFIED="1648570407616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/covid" />
+    <SUITE FILE_PATH="coverage/ML_Notes$3_predict.coverage" NAME="3_predict Coverage Results" MODIFIED="1651407994298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN_ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$config.coverage" NAME="config Coverage Results" MODIFIED="1650459486837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$dataloader2.coverage" NAME="dataloader2 Coverage Results" MODIFIED="1650204707294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$champ_predict.coverage" NAME="champ_predict Coverage Results" MODIFIED="1651400537690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/champagne" />
+    <SUITE FILE_PATH="coverage/ML_Notes$imdb_torch__1_.coverage" NAME="imdb_torch (1) Coverage Results" MODIFIED="1649516008716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/imdb" />
+    <SUITE FILE_PATH="coverage/ML_Notes$LeNet.coverage" NAME="LeNet Coverage Results" MODIFIED="1649570274366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NeuralNetwork" />
+    <SUITE FILE_PATH="coverage/ML_Notes$plot.coverage" NAME="plot Coverage Results" MODIFIED="1648358385886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/covid" />
+    <SUITE FILE_PATH="coverage/ML_Notes$torch_imdb.coverage" NAME="torch_imdb Coverage Results" MODIFIED="1649301988703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/imdb" />
+    <SUITE FILE_PATH="coverage/ML_Notes$myCNN__1_.coverage" NAME="myCNN (1) Coverage Results" MODIFIED="1649496592959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CIFAR10" />
+    <SUITE FILE_PATH="coverage/ML_Notes$lenet_torch.coverage" NAME="lenet_torch Coverage Results" MODIFIED="1649602882021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/MNIST" />
+    <SUITE FILE_PATH="coverage/ML_Notes$dataloader.coverage" NAME="dataloader Coverage Results" MODIFIED="1650118940104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/CMN-ENG" />
+    <SUITE FILE_PATH="coverage/ML_Notes$lenet_torch__2_.coverage" NAME="lenet_torch (2) Coverage Results" MODIFIED="1649571529277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example/MNIST" />
+  </component>
+</project>
