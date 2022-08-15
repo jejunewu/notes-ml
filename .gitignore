@@ -46,3 +46,4 @@ Note_NLP/TextMatch/LCQMC-RE2/modules/__pycache__/pooling.cpython-38.pyc
 Note_NLP/TextMatch/LCQMC-RE2/modules/__pycache__/prediction.cpython-38.pyc
 Note_NLP/TextMatch/LCQMC-RE2/utils/__pycache__/__init__.cpython-38.pyc
 Note_NLP/TextMatch/LCQMC-RE2/utils/__pycache__/registry.cpython-38.pyc
+*.xml
