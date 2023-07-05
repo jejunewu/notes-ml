@@ -6,7 +6,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 from torch.utils.data import DataLoader, Dataset, TensorDataset
-from NNUtils.torchwu import torchwu, cuda, metrics
+from ml_utils.torchwu import torchwu, cuda, metrics
 
 #%%
 seq_length = 100  # 句子长度

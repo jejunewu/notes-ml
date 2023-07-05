@@ -5,7 +5,7 @@ from torch.nn import functional as F
 from torch.utils.data import TensorDataset, DataLoader, random_split
 from torchvision.datasets import MNIST
 
-from NNUtils.torchwu import torchwu, cuda, metrics
+from ml_utils.torchwu import torchwu, cuda, metrics
 from notes_model.LeNet import Net28
 
 SPLIT_RATIO = 0.8

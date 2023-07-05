@@ -1,7 +1,7 @@
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split as TTS
 from sklearn.model_selection import cross_val_score as CVS
-from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
+from notes_knowledge.Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 import datetime
 import joblib
 

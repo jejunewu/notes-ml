@@ -78,9 +78,9 @@ def get_model(num_inputs,num_outputs,num_layers,num_neurons):
 
 
 def fit_model(training_inputs,training_outputs,model,num_epochs):
-    model_path = './model.h5'
+    model_path = 'model.h5'
     # Callbacks
-    tbCallBack = keras.callbacks.TensorBoard(log_dir='./Graph', histogram_freq=0, write_graph=True, write_images=True)
+    tbCallBack = keras.callbacks.TensorBoard(log_dir='Graph', histogram_freq=0, write_graph=True, write_images=True)
     checkpoint = keras.callbacks.ModelCheckpoint(model_path, monitor='val_loss', verbose=1, save_best_only=True, mode='min',save_weights_only=False)
     csv_logger = keras.callbacks.CSVLogger('training.log')
     earlystopping = keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0, patience=10, verbose=0, mode='auto', baseline=None, restore_best_weights=False)

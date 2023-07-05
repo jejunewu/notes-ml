@@ -6,7 +6,7 @@ from torch.utils.data import TensorDataset, DataLoader, random_split
 from torchvision.datasets import MNIST, CIFAR10
 import warnings
 
-from NNUtils.torchwu import torchwu, cuda, metrics
+from ml_utils.torchwu import torchwu, cuda, metrics
 from notes_model.LeNet import Net32
 
 warnings.filterwarnings("ignore")

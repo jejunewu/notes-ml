@@ -1,14 +1,8 @@
-
-from sklearn import gaussian_process
 from sklearn.gaussian_process import GaussianProcessRegressor as GPR
-from sklearn.gaussian_process.kernels import ConstantKernel as C, RBF
 
-from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split as TTS
+from notes_knowledge.Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 
-from sklearn.model_selection import KFold, cross_val_score as CVS , train_test_split as TTS
-from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
-
-import matplotlib.pyplot as plt
 import numpy as np
 
 

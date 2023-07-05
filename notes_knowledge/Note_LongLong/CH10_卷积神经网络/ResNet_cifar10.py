@@ -1,7 +1,7 @@
 import tensorflow as tf
 import os
 from tensorflow.keras import datasets,optimizers
-from Note_LongLong.CH10_卷积神经网络 import ResNet
+from notes_knowledge.Note_LongLong.CH10_卷积神经网络 import ResNet
 
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 tf.random.set_seed(2345)

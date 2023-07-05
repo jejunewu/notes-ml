@@ -3,15 +3,11 @@
 # from keras import models
 
 import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras import models, layers
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.models import Sequential
 
-from sklearn.model_selection import train_test_split as TTS, cross_val_score as CVS, StratifiedKFold as SKF, KFold
+from sklearn.model_selection import train_test_split as TTS, KFold
 from sklearn.metrics import r2_score
 
-from Note_ML_Algorithm.EvaluationModel import EvaluationModel as EM
 import datetime
 import numpy as np
 import os

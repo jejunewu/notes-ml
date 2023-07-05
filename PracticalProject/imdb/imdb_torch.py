@@ -4,7 +4,7 @@ from torch.nn import functional as F
 import torchkeras
 import string, re
 import torchtext
-from NNUtils import torchwu
+from ml_utils import torchwu
 
 MAX_WORDS = 10000  # 仅考虑最高频的10000个词
 MAX_LEN = 200  # 每个样本保留200个词的长度
