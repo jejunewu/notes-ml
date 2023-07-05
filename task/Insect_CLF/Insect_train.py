@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import optimizers,metrics,Sequential,layers
-from PracticalProject.Insect_CLF.Insect import load_insect
+from task.Insect_CLF.Insect import load_insect
 import os
 import matplotlib.pyplot as plt
 
@@ -96,7 +96,7 @@ print('###############################################')
     #     tf.summary.image('img', x, step=step, max_outputs=9)
     #     time.sleep(5)
 
-from PracticalProject.Insect_CLF import ResNet
+from task.Insect_CLF import ResNet
 model = ResNet.resnet18()  # ResNet18网络
 model0 = Sequential([
     layers.Flatten(),

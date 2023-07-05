@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import datasets, optimizers
-from PracticalProject.CIFAR10.VGG16.VGG16 import VGG16
+from task.CIFAR10.VGG16.VGG16 import VGG16
 
 def prepare_cifar(x, y):
     x = tf.cast(x, tf.float32)

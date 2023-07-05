@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import optimizers,metrics,Sequential,layers
-from PracticalProject.pokeman.pokeman import load_pokeman, load_csv
+from task.pokeman.pokeman import load_pokeman, load_csv
 import os
 import matplotlib.pyplot as plt
 
@@ -96,7 +96,7 @@ print('###############################################')
     #     tf.summary.image('img', x, step=step, max_outputs=9)
     #     time.sleep(5)
 
-from PracticalProject.pokeman import ResNet
+from task.pokeman import ResNet
 model = ResNet.resnet18()  # ResNet18网络
 model2 = Sequential([
     layers.Flatten(),
