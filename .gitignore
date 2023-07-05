@@ -1,11 +1,5 @@
+.idea
 
-.idea/deployment.xml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/misc.xml
-.idea/ML-Notes.iml
-.idea/modules.xml
-.idea/vcs.xml
 Competition/天池-NLP-新闻文本分类/data/NLP_data_list_0715.csv
 Competition/天池-NLP-新闻文本分类/data/submit_fasttext.csv
 Competition/天池-NLP-新闻文本分类/data/test_a.csv
@@ -20,11 +14,11 @@ PracticalProject/__pycache__/__init__.cpython-38.pyc
 PracticalProject/CMN_ENG/__pycache__/__init__.cpython-38.pyc
 PracticalProject/CMN_ENG/__pycache__/config.cpython-38.pyc
 PracticalProject/movie_review_cls/__pycache__/config.cpython-38.pyc
-NeuralNetwork/__pycache__/__init__.cpython-38.pyc
-NeuralNetwork/__pycache__/Attention.cpython-38.pyc
-NeuralNetwork/__pycache__/LeNet.cpython-38.pyc
-NeuralNetwork/__pycache__/Loss.cpython-38.pyc
-NeuralNetwork/__pycache__/Seq2Seq.cpython-38.pyc
+notes_model/__pycache__/__init__.cpython-38.pyc
+notes_model/__pycache__/Attention.cpython-38.pyc
+notes_model/__pycache__/LeNet.cpython-38.pyc
+notes_model/__pycache__/Loss.cpython-38.pyc
+notes_model/__pycache__/Seq2Seq.cpython-38.pyc
 NNUtils/__pycache__/__init__.cpython-38.pyc
 NNUtils/nlp/__pycache__/__init__.cpython-38.pyc
 NNUtils/nlp/__pycache__/sentences_zh.cpython-38.pyc

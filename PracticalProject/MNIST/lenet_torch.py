@@ -6,7 +6,7 @@ from torch.utils.data import TensorDataset, DataLoader, random_split
 from torchvision.datasets import MNIST
 
 from NNUtils.torchwu import torchwu, cuda, metrics
-from NeuralNetwork.LeNet import Net28
+from notes_model.LeNet import Net28
 
 SPLIT_RATIO = 0.8
 BATCH_SIZE = 100

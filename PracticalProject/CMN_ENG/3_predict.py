@@ -1,6 +1,6 @@
 import torch
 
-from NeuralNetwork.Seq2Seq import Seq2SeqEncoder, Seq2SeqDecoder, EncoderDecoder
+from notes_model.Seq2Seq import Seq2SeqEncoder, Seq2SeqDecoder, EncoderDecoder
 from config import *
 
 """

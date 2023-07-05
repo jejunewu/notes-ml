@@ -7,7 +7,7 @@ from torchvision.datasets import MNIST, CIFAR10
 import warnings
 
 from NNUtils.torchwu import torchwu, cuda, metrics
-from NeuralNetwork.LeNet import Net32
+from notes_model.LeNet import Net32
 
 warnings.filterwarnings("ignore")
 

@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader
 
 from config import *
-from NeuralNetwork.Seq2Seq import Seq2SeqDecoder, Seq2SeqEncoder, EncoderDecoder
+from notes_model.Seq2Seq import Seq2SeqDecoder, Seq2SeqEncoder, EncoderDecoder
 
 """
 读取vocab
@@ -37,7 +37,7 @@ print('x_len->y_len: ', x_len.shape, '-->', y_len.shape)
 """
 掩蔽交叉熵损失
 """
-from NeuralNetwork.Loss import MaskedSoftmaxCELoss
+from notes_model.Loss import MaskedSoftmaxCELoss
 
 ## 定义模型
 
