@@ -1,4 +1,4 @@
-# ML-Notes
+# Notes of ML
 
 ML学习资料及笔记
 
