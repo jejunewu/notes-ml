@@ -4,21 +4,16 @@ ML学习资料及笔记
 
 ---
 
-## 1. Note : 笔记
+## notes类
+- model: 模型实践
+- knowledge: 学习知识
 
-- **Note_D2L** : 李沐[《动手学深度学习》](https://zh.d2l.ai/) 以及[【李沐视频】](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497) 代码笔记
-- **Note_Torch** : pytorch学习笔记
-- **Note_LongLong** : 龙龙 [《TensorFlow深度学习》](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book) TF2学习笔记
-- **Note_LiHangII_Code** : 李航《统计学习方法》
+## task类
+- 实战
 
-## 2. Repo : 参考仓库
 
-- **Repo_nndl_exercise** : 邱锡鹏[《神经网络与深度学习》](https://github.com/nndl) 习题。[PDF下载](https://nndl.github.io/)
-- **Repo_dragen1860_Deep-Learning-with-TensorFlow-book** : 龙龙[《TensorFlow深度学习》](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book) 原仓库。
-- **Repo_Statistical-Learning-Method_Code** : 手写实现李航《统计学习方法》书中全部算法。[参考仓库](https://github.com/Dod-o/Statistical-Learning-Method_Code)
-
-## 3. 其他
-
-- **NeuralNetwork** :搭好的模型。
-- **Datasets** : 手动放置数据集。
-- **PracticalProject** : 实战项目、数据练习。
+## 参考资料
+- [《动手学深度学习》 李沐](https://zh.d2l.ai/)
+- nndl_exercise : 邱锡鹏[《神经网络与深度学习》](https://github.com/nndl) 习题。[PDF下载](https://nndl.github.io/)
+- dragen1860_Deep-Learning-with-TensorFlow-book: 龙龙[《TensorFlow深度学习》](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book) 原仓库。
+- Statistical-Learning-Method_Code : 手写实现李航《统计学习方法》书中全部算法。[参考仓库](https://github.com/Dod-o/Statistical-Learning-Method_Code)
