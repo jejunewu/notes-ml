@@ -81,7 +81,18 @@ bool build_model() {
     float layer1_bias_values[] = {0.0};
 
     // 如果要使用动态shape，必须让NetworkDefinition的维度定义为-1，in_channel是固定的
-
+    nvinfer1::ITensor *input = network->addInput("image", nvinfer1::DataType::kFLOAT,
+                                                 nvinfer1::Dims4(-1, num_input, -1, -1));
+    nvinfer1::Weights layer1_weight = make_weights(layer1_weight_values, 9);
+    nvinfer1::Weights layer1_bias = make_weights(layer1_bias_values, 1);
+    //增加卷积层 (过时警告)
+    auto layer1 = network->addConvolution(*input, num_output, nvinfer1::DimsHW(3, 3), layer1_weight, layer1_bias);
+    layer1->setPadding(nvinfer1::DimsHW(1, 1));
+    //增加激活函数 relu
+    auto prob = network->addActivation(*layer1->getOutput(0), nvinfer1::ActivationType::kRELU);
+    // 将我们需要的prob标记为输出
+    network->markOutput(*prob->getOutput(0));
+    
 
 
 }
