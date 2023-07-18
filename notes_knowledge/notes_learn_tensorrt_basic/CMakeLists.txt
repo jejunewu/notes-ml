@@ -13,18 +13,18 @@ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++ -lc++abi")
 endif ()
 
-## TensorRT
-set(TENSORRT_DIR /aidata/junjie/soft/installer/TensorRT-8.6.1.6)
-find_library(NVINFER_LIB nvinfer HINTS ${TENSORRT_DIR}/lib)
-find_library(NVPARSERS_LIB nvparsers HINTS ${TENSORRT_DIR}/lib)
-find_library(NVINFER_PLUGIN_LIB nvinfer_plugin HINTS ${TENSORRT_DIR}/lib)
-find_package(CUDA REQUIRED)
 
-include_directories(utils)
-include_directories(/usr/local/cuda/include)
-include_directories(${TENSORRT_DIR}/include)
-link_directories(${TENSORRT_DIR}/lib)
-link_directories(/usr/local/cuda/lib64)
+## CUDA
+set(CUDA_DIR /usr/local/cuda/)
+find_package(CUDA REQUIRED)
+include_directories(${CUDA_INCLUDE_DIRS})
+link_directories(${CUDA_LIB64})
+
+
+## TensorRT
+set(TensorRT_DIR /aidata/junjie/soft/installer/TensorRT-8.6.1.6)
+include_directories(${TensorRT_DIR}/include)
+link_directories(${TensorRT_DIR}/lib)
 
 
 file(GLOB files src/*.cpp)
@@ -46,4 +46,4 @@ endforeach ()
 #add_subdirectory(basic-1.2-hello-inference)
 add_subdirectory(basic-1.3-cnn-and-dynamic-shape)
 
-target_link_libraries(main ${NVINFER_LIB} ${NVPARSERS_LIB} ${NVINFER_PLUGIN_LIB} ${CUDA_LIBRARIES})
+target_link_libraries(main ${CUDA_LIBRARIES} nvinfer nvonnxparser)
