@@ -44,6 +44,8 @@ endforeach ()
 
 #add_subdirectory(basic-1.1-hello)
 #add_subdirectory(basic-1.2-hello-inference)
-add_subdirectory(basic-1.3-cnn-and-dynamic-shape)
+#add_subdirectory(basic-1.3-cnn-and-dynamic-shape)
+#add_subdirectory(basic-1.5-onnx-parser)
+add_subdirectory(basic-1.6-onnxparser-source)
 
 target_link_libraries(main ${CUDA_LIBRARIES} nvinfer nvonnxparser)
