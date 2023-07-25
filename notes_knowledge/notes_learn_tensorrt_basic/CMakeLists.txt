@@ -22,7 +22,7 @@ link_directories(${CUDA_LIB64})
 
 
 ## TensorRT
-set(TensorRT_DIR /aidata/junjie/soft/installer/TensorRT-8.6.1.6)
+set(TensorRT_DIR /aidata/junjie/soft/TensorRT-8.6.1.6)
 include_directories(${TensorRT_DIR}/include)
 link_directories(${TensorRT_DIR}/lib)
 
