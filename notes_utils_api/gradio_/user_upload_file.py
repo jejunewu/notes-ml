@@ -1,7 +1,13 @@
-import gradio as gr
 import json
-
 import gradio as gr
+import os
+import tempfile
+
+tempfile.tempdir = "/aidata/junjie/tmp"
+
+'''
+上传一个txt文本，并且在线解析内容
+'''
 
 
 class Args:
@@ -13,13 +19,10 @@ args = Args()
 
 
 def upload_file(files):
-    print(files)
-    files.seek(0)
-    print(files.read())
-    # file_paths = [file.name for file in files]
-    args.path = files
+    args.path = files.name
+    files.delete = True
     print(args.path)
-    return files.read()
+    return files.name
 
 
 def read_text():
