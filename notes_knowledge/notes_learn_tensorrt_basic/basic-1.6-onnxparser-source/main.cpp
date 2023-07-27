@@ -6,6 +6,7 @@
 // 编译用的头文件
 #include "NvInfer.h"
 #include "NvOnnxParser.h"
+//#include "onnx_tensorrt/NvOnnxParser.h"
 
 
 // system include
@@ -65,7 +66,7 @@ public:
 
 
 //------------------------------------------- 构建模型 --------------------------------------------//
-bool build_mdoel() {
+bool build_model() {
     TRTLogger logger;
 
     //构建模型需要的组件
@@ -73,7 +74,11 @@ bool build_mdoel() {
     nvinfer1::IBuilderConfig *config = builder->createBuilderConfig();
     nvinfer1::INetworkDefinition *network = builder->createNetworkV2(1);
 
-    // 通过onnxparse解析结果填充到network
+    /**
+     * 通过onnxparse解析结果填充到network
+     *
+     */
+
     nvonnxparser::IParser *parser = nvonnxparser::createParser(*network, logger);
     if (!parser->parseFromFile("demo.onnx", 1)) {
         printf("Failed to parse demo.onnx\n");
@@ -83,14 +88,44 @@ bool build_mdoel() {
     printf("Workspace Size = %.2f MB\n", (1 << 28) / 1024.0f / 1024.0f);
     config->setMaxWorkspaceSize(1 << 28);
 
-    //配置输入
+    //配置输入，多输入需要配置多个profile
     auto profile = builder->createOptimizationProfile();
     auto input_tensor = network->getInput(0);
     int input_channel = input_tensor->getDimensions().d[1];
 
+    // 配置输入的最小、最优、最大的范围
+    profile->setDimensions(input_tensor->getName(), nvinfer1::OptProfileSelector::kMIN,
+                           nvinfer1::Dims4(1, input_channel, 3, 3));
+    profile->setDimensions(input_tensor->getName(), nvinfer1::OptProfileSelector::kOPT,
+                           nvinfer1::Dims4(1, input_channel, 3, 3));
+    profile->setDimensions(input_tensor->getName(), nvinfer1::OptProfileSelector::kMAX,
+                           nvinfer1::Dims4(maxBatchSize, input_channel, 5, 5));
+    config->addOptimizationProfile(profile);
 
+    nvinfer1::ICudaEngine *engine = builder->buildEngineWithConfig(*network, *config);
+    if (engine == nullptr) {
+        printf("build engine failed. \n");
+        return false;
+    }
+
+    //模型序列号TRT，存储为文件
+    nvinfer1::IHostMemory *model_data = engine->serialize();
+    FILE *f = fopen("engine.trt", "wb");
+    fwrite(model_data->data(), 1, model_data->size(), f);
+    fclose(f);
+
+    // 卸载顺序按照构建顺序倒序
+    model_data->destroy();
+    parser->destroy();
+    engine->destroy();
+    network->destroy();
+    config->destroy();
+    builder->destroy();
+    printf("Done.\n");
+    return true;
 }
 
 int main() {
-    cout << "heelo" << endl;
-};
+    build_model();
+    return 0;
+}

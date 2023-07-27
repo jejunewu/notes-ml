@@ -26,6 +26,10 @@ set(TensorRT_DIR /aidata/junjie/soft/TensorRT-8.6.1.6)
 include_directories(${TensorRT_DIR}/include)
 link_directories(${TensorRT_DIR}/lib)
 
+## onnx-tensorrt
+set(onnx_tenorrt_DIR /aidata/junjie/repo/github/onnx-tensorrt)
+include_directories(${onnx_tenorrt_DIR})
+
 
 file(GLOB files src/*.cpp)
 foreach (file ${files})
