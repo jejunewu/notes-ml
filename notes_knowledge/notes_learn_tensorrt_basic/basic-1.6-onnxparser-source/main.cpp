@@ -5,8 +5,8 @@
 // TensorRT include
 // 编译用的头文件
 #include "NvInfer.h"
-#include "NvOnnxParser.h"
-//#include "onnx_tensorrt/NvOnnxParser.h"
+//#include "NvOnnxParser.h"
+#include "onnx-tensorrt/NvOnnxParser.h"
 
 
 // system include

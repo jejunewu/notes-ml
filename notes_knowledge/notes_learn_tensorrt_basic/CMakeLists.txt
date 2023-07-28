@@ -27,7 +27,7 @@ include_directories(${TensorRT_DIR}/include)
 link_directories(${TensorRT_DIR}/lib)
 
 ## onnx-tensorrt
-set(onnx_tenorrt_DIR /aidata/junjie/repo/github/onnx-tensorrt)
+set(onnx_tenorrt_DIR /aidata/junjie/repo/github/notes-ml/notes_knowledge/notes_learn_tensorrt_basic/onnx-tensorrt)
 include_directories(${onnx_tenorrt_DIR})
 
 

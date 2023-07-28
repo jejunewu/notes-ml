@@ -8,9 +8,9 @@ https://zifuture.com/group/LearnTensorRT-Basic
 
 ## 下载文件
 ```shell
-folder=basic-1.6-onnxparser-source
-sub_folder=onnx
-file=onnx-operators-ml.proto
+folder=basic-1.7-hello-plugin
+sub_folder=
+file=readme.md
 mkdir -p ${folder}/${sub_folder}
 wget https://zifuture.com/api/public/repo/detail/trt/${folder}/${sub_folder}/${file}?download=true -O ${folder}/${sub_folder}/${file}
 
