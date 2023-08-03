@@ -128,7 +128,7 @@ bool build_model() {
 }
 //------------------------------------------------------------------------------------------------//
 
-//------------------------------------------- 构建TRT模型推理函数 --------------------------------------------//
+//------------------------------------------- 构建TRT模型读取函数 --------------------------------------------//
 vector<unsigned char> load_trt_model(const string &file) {
     ifstream in(file, ios::in | ios::binary);
     if (!in.is_open()) {
@@ -146,15 +146,39 @@ vector<unsigned char> load_trt_model(const string &file) {
     in.close();
     return data;
 }
-
-//void inference() {
-//    TRTLogger logger;
-//    auto engine_data = load
-//}
-
 //------------------------------------------------------------------------------------------------//
 
+//------------------------------------------- 构建TRT模型推理函数 --------------------------------------------//
 
+void inference() {
+    TRTLogger logger;
+    auto engine_data = load_trt_model("engine.trtmodel");
+    nvinfer1::IRuntime *runtime = nvinfer1::createInferRuntime(logger);
+    nvinfer1::ICudaEngine *engine = runtime->deserializeCudaEngine(engine_data.data(), engine_data.size());
+    if (engine == nullptr) {
+        printf("Deserialize cuda engine failed. \n");
+        runtime->destroy();
+        return;
+    }
+
+    nvinfer1::IExecutionContext *execution_context = engine->createExecutionContext();
+    cudaStream_t stream = nullptr;
+    cudaStreamCreate(&stream);
+
+    float input_data_host[] = {
+            // batch 0
+            1, 1, 1,
+            1, 1, 1,
+            1, 1, 1,
+
+            // batch 1
+            -1, 1, 1,
+            1, 0, 1,
+            1, 1, -1
+    };
+
+
+}
 
 
 int main() {
