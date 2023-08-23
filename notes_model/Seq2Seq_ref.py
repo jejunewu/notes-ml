@@ -21,7 +21,7 @@ class EncoderRNN(nn.Module):
         return torch.zeros(1, 1, self.hidden_size, device=DEVICE)
 
 
-from ml_utils.torchwu import torchwu
+from notes_utils_ml.torchwu import torchwu
 
 model = EncoderRNN(vocab_size=1000, input_size=6, hidden_size=3).to(DEVICE)
 encoder_hidden = model.initHidden()

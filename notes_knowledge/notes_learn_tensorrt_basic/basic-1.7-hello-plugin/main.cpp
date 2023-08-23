@@ -176,13 +176,47 @@ void inference() {
             1, 0, 1,
             1, 1, -1
     };
+    float *input_data_device = nullptr;
+    //3x3输入，对应3x3输出
+    int ib = 2;
+    int iw = 3;
+    int ih = 3;
+    float *output_data_host[ib * iw * ih];
+    float *output_data_device = nullptr;
+    cudaMalloc(&input_data_device, sizeof(input_data_host));
+    cudaMalloc(&output_data_device, sizeof(output_data_host));
+    cudaMemcpyAsync(input_data_device, input_data_host, sizeof(input_data_host), cudaMemcpyDeviceToDevice, stream);
 
+    // 明确当前推理时，使用的数据输入大小
+    execution_context->setBindingDimensions(0, nvinfer1::Dims4(ib, 1, ih, iw));
+    float *bindings[] = {input_data_device, output_data_device};
+    cudaMemcpyAsync(output_data_host, output_data_device, sizeof(output_data_host), cudaMemcpyDeviceToHost, stream);
+    cudaStreamSynchronize(stream);
 
+    for (int b = 0; b < ib; ++b) {
+        printf("batch %d. output_data_host = \n", b);
+        for (int i = 0; i < iw * ih; ++i) {
+            printf("%f, ", output_data_host[b * iw * ih + i]);
+            if ((i + 1) % iw == 0)
+                printf("\n");
+        }
+    }
+
+    printf("Clean memory\n");
+    cudaStreamDestroy(stream);
+    cudaFree(input_data_device);
+    cudaFree(output_data_device);
+    execution_context->destroy();
+    engine->destroy();
+    runtime->destroy();
 }
 
+//-----------------------------------------------------------------------------------------------------------//
 
 int main() {
     if (!build_model()) {
         return -1;
     }
+    inference();
+    return 0;
 }

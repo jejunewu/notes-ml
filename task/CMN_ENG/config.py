@@ -1,5 +1,5 @@
 import os
-from ml_utils.torchwu import try_gpu
+from notes_utils_ml.torchwu import try_gpu
 
 ############# 超参
 # 句子最大长度

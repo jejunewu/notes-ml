@@ -8,9 +8,10 @@ https://zifuture.com/group/LearnTensorRT-Basic
 
 ## 下载文件
 ```shell
+cd /aidata/junjie/repo/github/notes-ml/notes_knowledge/notes_learn_tensorrt_basic
 folder=basic-1.7-hello-plugin
 sub_folder=src
-file=main.cpp
+file=myselu-plugin.cpp
 mkdir -p ${folder}/${sub_folder}
 wget https://zifuture.com/api/public/repo/detail/trt/${folder}/${sub_folder}/${file}?download=true -O ${folder}/${sub_folder}/${file}
 
