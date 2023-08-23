@@ -18,6 +18,7 @@ class Args:
 args = Args()
 
 
+
 def upload_file(files):
     args.path = files.name
     files.delete = True
