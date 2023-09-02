@@ -1,0 +1,3 @@
+/mnt/d/repo/github/notes-ml/notes_utils_api/cython_/cmake-build-debug/CMakeFiles/cython_.dir
+/mnt/d/repo/github/notes-ml/notes_utils_api/cython_/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/repo/github/notes-ml/notes_utils_api/cython_/cmake-build-debug/CMakeFiles/rebuild_cache.dir

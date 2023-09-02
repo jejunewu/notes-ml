@@ -1,0 +1,6 @@
+# ninja log v5
+243	325	1691833018476652100	cython_	9ed89c4f36ab02b5
+4	249	1691835839970689400	build.ninja	7a3b259ebc9af731
+8	239	1691833018389364900	CMakeFiles/cython_.dir/demo_cpp_to_py/main.cpp.o	7b8bf0ec54454eb3
+6	73	1691832993998480100	CMakeFiles/cython_.dir/demo_cpp_to_py/cpp_add.cpp.o	d8aab5dc72fc2d6b
+9	95	1691834545703548200	CMakeFiles/cython_.dir/demo2_c_to_py/main.c.o	faa1b8f71c662e99
