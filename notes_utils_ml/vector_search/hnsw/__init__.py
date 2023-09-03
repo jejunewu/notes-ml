@@ -1,4 +1,5 @@
-import numpy  as np
+import uuid
 
-# d = np.arange(100)+100086
-# print(d)
+my_uuid = uuid.uuid4()
+
+print(uuid.uuid4().int)

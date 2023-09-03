@@ -1,28 +1,39 @@
 from transformers import AutoTokenizer, AutoModel
 import torch
+import sys
 
-# Load model from HuggingFace Hub
-# 输出长度是 1024
-model_large_dir = r'/home/junjie/data/model/huggingface/bge-large-zh'
-# 输出长度是 768
-model_base_dir = r'/home/junjie/data/model/huggingface/bge-base-zh'
-tokenizer = AutoTokenizer.from_pretrained(model_base_dir)
-model = AutoModel.from_pretrained(model_base_dir)
+BGE_MODEL_PATH = {
+    "win32_large": r"J:\repo\huggingface\bge-large-zh",
+    "linux_base": r"/home/junjie/data/model/huggingface/bge-base-zh",
+}
 
-# Tokenize sentences
-# Sentences we want sentence embeddings for
-sentences = ["样例数据-1", "样例数据-2"]
-encoded_input = tokenizer(sentences, padding=True, truncation=True, return_tensors='pt')
-# 对于短查询到长文档的检索任务, 为查询加上指令
-# encoded_input = tokenizer([instruction + q for q in queries], padding=True, truncation=True, return_tensors='pt')
 
-# Compute embeddings
-with torch.no_grad():
-    model_output = model(**encoded_input)
-    # Perform pooling. In this case, cls pooling.
-    sentence_embeddings = model_output[0][:, 0]
+class BgeEmbedding:
+    def __init__(self, model: str = 'large', device='cpu'):
+        model_dir = BGE_MODEL_PATH[f"{sys.platform}_{model}"]
+        # load model
+        self.device = device
+        self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
+        self.model = AutoModel.from_pretrained(model_dir).to(self.device)
 
-# normalize embeddings
-sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
-print("Sentence embeddings:", sentence_embeddings)
-print("Shape:", sentence_embeddings.shape)
+    def embedding(self, queries: list, instruction: str = None):
+        # 对于短查询到长文档的检索任务, 为查询加上指令
+        if instruction:
+            encoded_input = self.tokenizer([instruction + q for q in queries], padding=True, truncation=True,
+                                           return_tensors='pt')
+        else:
+            encoded_input = self.tokenizer(queries, padding=True, truncation=True, return_tensors='pt')
+        # 计算 embeddings
+        with torch.no_grad():
+            encoded_input.to(self.device)
+            model_output = self.model(**encoded_input)
+            sentence_embeddings = model_output[0][:, 0]
+        # normalize embeddings
+        sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+        return sentence_embeddings
+
+
+if __name__ == '__main__':
+    bge_ebd = BgeEmbedding(model='large')
+    embeddings = bge_ebd.embedding(["你好吗", "我很好"])
+    print(embeddings.shape)

@@ -1,25 +1,30 @@
-from typing import Optional, Iterable
-import time
-import hnswlib
+from typing import Optional, Sequence
 from hnswlib import Index
+import hnswlib
+import numpy as np
+import time
 import pickle
 import os
 
 
 class KnowledgeBaseService:
-    def __init__(self, kb_index_file: Optional[str] = 'kb_index.bin', kb_text_file: Optional[str] = 'kb_text.bin',
-                 **kwargs) -> None:
+    def __init__(
+            self,
+            kb_index_file: Optional[str] = 'kb_index.bin',
+            kb_text_file: Optional[str] = 'kb_text.bin',
+            **kwargs
+    ) -> None:
         """
         Args:
-            kb_index_file:
-            kb_doc_file:
+            kb_index_file: 保存的索引文件
+            kb_text_file: 保存文档文件
             kwargs:
         """
         self.kb_index_file = kb_index_file
         self.kb_text_file = kb_text_file
-        self.kb_index = self._init_kb_index(**kwargs)
 
         # init kb_index
+        self.kb_index = self._init_kb_index(**kwargs)
         if os.path.exists(self.kb_index_file):
             self.kb_index.load_index(self.kb_index_file)
         else:
@@ -53,7 +58,9 @@ class KnowledgeBaseService:
             dim: 向量维度
             max_elements: 最大数据量
             ef_construction:  controls index search speed/build speed tradeoff
-            M: M is tightly connected with internal dimensionality of the data. Strongly affects memory consumption (~M) Higher M leads to higher accuracy/run_time at fixed ef/efConstruction
+            M: M is tightly connected with internal dimensionality of the data.
+                Strongly affects memory consumption (~M)
+                Higher M leads to higher accuracy/run_time at fixed ef/efConstruction
             ef: 用于控制召回精度，higher ef leads to better accuracy, but slower search
             num_threads: 创建/召回线程数
 
@@ -68,22 +75,29 @@ class KnowledgeBaseService:
         kb_index.set_num_threads(num_threads=num_threads)
         return kb_index
 
-    def insert_kb(self, vector: Iterable, text: Iterable, ids: Iterable = None, num_threads: int = -1,
-                  replace_deleted: bool = False) -> None:
+    def insert_kb(
+            self,
+            vector: Sequence,
+            text: Sequence,
+            ids: Optional[Sequence] = None,
+            num_threads: int = -1,
+            replace_deleted: bool = False
+    ) -> None:
         """
 
         插入数据
 
         Args:
-            vector: 文本向量和文本, shape -> [vector, text]
-            text:
-            ids:
+            vector: 向量和文本, shape -> [batch, dim]
+            text: vector向量对应的文本, shape -> [batch, ]
+            ids: 索引id，不写默认按时间方式索引
             num_threads:
             replace_deleted:
 
         """
-        assert len(vector) == len(
-            text), "The first parameter `vector` and the second parameter `text` should have the same length. And the order corresponds to each other."
+        assert len(vector) == len(text), \
+            "The first parameter `vector` and the second parameter `text` should have the same length. " \
+            "And the order corresponds to each other."
         if ids is None:
             ids = np.arange(len(vector)) + int(time.time() * (10 ** int(len(str(self.max_elements)))))
         self.kb_index.add_items(vector, ids=ids, num_threads=num_threads, replace_deleted=replace_deleted)
@@ -92,8 +106,16 @@ class KnowledgeBaseService:
         with open(self.kb_text_file, 'wb') as file:
             pickle.dump(self.kb_text, file)
 
-    def query_kb(self, vector: Iterable, k=1, num_threads=-1) -> dict:
+    def query_kb(
+            self,
+            vector: Sequence,
+            k=1,
+            num_threads=-1
+    ) -> dict:
         """
+
+        向量知识库查询
+
         Args:
             vector: 查询向量，shape -> (batch, dim)
             k:
@@ -117,8 +139,14 @@ class KnowledgeBaseService:
             "text": result_text
         }
 
-    def drop_kb(self, kb_index_file: Optional[str] = 'kb_index.bin',
-                kb_text_file: Optional[str] = 'kb_text.bin') -> None:
+    def drop_kb(
+            self,
+            kb_index_file: Optional[str] = None,
+            kb_text_file: Optional[str] = None
+    ) -> None:
+        """删除知识库"""
+        kb_index_file = kb_index_file or self.kb_index_file
+        kb_text_file = kb_text_file or self.kb_text_file
         os.remove(kb_index_file) if os.path.exists(kb_index_file) else None
         os.remove(kb_text_file) if os.path.exists(kb_text_file) else None
 
@@ -137,8 +165,6 @@ class KnowledgeBaseService:
 
 
 if __name__ == '__main__':
-    import numpy as np
-
     # np.random.seed(666)
     dim = 768
     num_elements = 10000
@@ -155,12 +181,13 @@ if __name__ == '__main__':
     print(len(text_insert))
 
     kbs = KnowledgeBaseService(max_elements=999999, M=16, ef_construction=100, dim=768)
+    kbs.drop_kb()
     kbs.insert_kb(vector_insert, text_insert)
 
     data_query = np.random.random((1, 786))
     print("data_query:", data_query.shape)
     info = kbs.query_kb(data_query, k=1)
-    print(info)
+    print(info['text'])
     details = kbs.get_kb_details()
     print(details)
     # kbs.drop_kb()
